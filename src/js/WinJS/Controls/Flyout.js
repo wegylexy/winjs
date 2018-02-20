@@ -183,6 +183,7 @@ define([
                 //
 
                 setZIndex: function _LightDismissableLayer_setZIndex(zIndex) {
+                    zIndex = parseInt(zIndex);
                     this._clients.forEach(function (client, index) {
                         client.setZIndex(zIndex + index);
                     }, this);
