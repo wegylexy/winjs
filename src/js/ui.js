@@ -4,7 +4,7 @@ define([
     // 'WinJS/VirtualizedDataSource',
     // 'WinJS/Vui',
     // 'WinJS/Controls/IntrinsicControls',
-    // 'WinJS/Controls/ListView',
+    "WinJS/Controls/ElementResizeInstrument", // 'WinJS/Controls/ListView',
     // 'WinJS/Controls/FlipView',
     // 'WinJS/Controls/ItemContainer',
     // 'WinJS/Controls/Repeater',
