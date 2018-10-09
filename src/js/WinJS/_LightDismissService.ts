@@ -115,7 +115,7 @@ require(["require-style!less/styles-lightdismissservice"]);
 //       - Tries to give focus to the root element of the dismissable.
 //
 
-var baseZIndex = 10000;
+var baseZIndex = 16383;
 
 var Strings = {
     get closeOverlay() { return _Resources._getWinJSString("ui/closeOverlay").value; }
