@@ -601,6 +601,16 @@ define([
                                 }
                                 alignHorizontally(anchorBorderBox, flyoutMeasurements, currentAlignment);
                                 break;
+                            case "preferbottom":
+                                if (!fitBottom(anchorBorderBox.bottom, flyoutMeasurements)) {
+                                    // Didn't fit bottom (preferred), so go above.
+                                    if (!fitTop(anchorBorderBox.top, flyoutMeasurements)) {
+                                        // Didn't fit, needs scrollbar
+                                        configureVerticalWithScroll(anchorBorderBox);
+                                    }
+                                }
+                                alignHorizontally(anchorBorderBox, flyoutMeasurements, currentAlignment);
+                                break;
                             case "autohorizontal":
                                 if (!fitLeft(anchorBorderBox.left, flyoutMeasurements)) {
                                     // Didn't fit left (preferred), so go right.
